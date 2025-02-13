@@ -1,0 +1,43 @@
+
+        /* Fondo fijo */
+        .hero {
+            height: 100vh;
+            background: url('./Imagenes/FondoScroleableFijo.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed; /* Mantiene la imagen de fondo fija */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* Secciones de contenido */
+        .content-section {
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        /* Tarjetas de información */
+        .info-box {
+            width: 60%;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+            color: rgb(255, 255, 255);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-in-out;
+        }
+
+        /* Aparece cuando se hace scroll */
+        .info-box.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+   
