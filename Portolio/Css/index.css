@@ -2,13 +2,13 @@
         /* Fondo fijo */
         .hero {
             height: 100vh;
-            background: url('./Imagenes/FondoScroleableFijo.jpg') no-repeat center center;
+            background: url('/Portolio/Imagenes/FondoScroleableFijo.jpg') no-repeat center center;
             background-size: cover;
             background-attachment: fixed; /* Mantiene la imagen de fondo fija */
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: rgb(255, 255, 255);
             text-align: center;
             font-size: 2rem;
             font-weight: bold;
@@ -22,7 +22,18 @@
             justify-content: center;
            
         }
-
+        
+        .bg-image {
+            background-image: url(/Portolio/Imagenes/Logo.webp) ;
+            background-size: cover; /* Cubre todo el div */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* No repetir la imagen */
+            /* Altura del div */
+            
+            align-items: center; /* Centra el contenido verticalmente */
+            justify-content: center; /* Centra el contenido horizontalmente */
+        }
+        
         /* Tarjetas de información */
         .info-box {
             width: 60%;
