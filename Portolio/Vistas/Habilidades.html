@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__fadeInDown">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand animate__animated animate__heartBeat animate__delay-1s" href="index.html">
                 <img src="/Portolio/Imagenes/Logo.webp" alt="Logo" width="40" height="40" class="rounded circle d-inline-block align-text-top me-2">
                 Porfolio
             </a>
@@ -23,7 +24,6 @@
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
-                   
                     <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="Habilidades.html">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="SobreMi.html">Sobre Mi</a></li>
@@ -34,23 +34,23 @@
     </nav>
     <section class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-5 text-primary">Habilidades Técnicas</h2>
+            <h2 class="text-center mb-5 text-primary animate__animated animate__fadeIn animate__delay-1s">Habilidades Técnicas</h2>
     
             <!-- Desarrollo Frontend -->
-            <div class="mb-5">
-                <h3 class="text-secondary border-bottom pb-2 mb-4">Desarrollo Frontend</h3>
+            <div class="mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="text-secondary border-bottom pb-2 mb-4 section-header">Desarrollo Frontend</h3>
                 <div class="row g-4">
                     <!-- HTML/CSS -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fab fa-html5"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">HTML5 / CSS3</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -63,16 +63,16 @@
                     </div>
     
                     <!-- JavaScript -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fab fa-js"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">JavaScript</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -85,16 +85,16 @@
                     </div>
     
                     <!-- Frameworks -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fab fa-react"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">Frameworks Frontend</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -109,20 +109,20 @@
             </div>
     
             <!-- Desarrollo Backend -->
-            <div class="mb-5">
-                <h3 class="text-secondary border-bottom pb-2 mb-4">Desarrollo Backend</h3>
+            <div class="mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <h3 class="text-secondary border-bottom pb-2 mb-4 section-header">Desarrollo Backend</h3>
                 <div class="row g-4">
                     <!-- Node.js -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fab fa-node-js"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">Node.js</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -135,16 +135,16 @@
                     </div>
     
                     <!-- Bases de Datos -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fas fa-database"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">Bases de Datos</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -157,16 +157,16 @@
                     </div>
     
                     <!-- Otros Frameworks -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fas fa-server"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">Backend Frameworks</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -181,20 +181,20 @@
             </div>
     
             <!-- Herramientas -->
-            <div>
-                <h3 class="text-secondary border-bottom pb-2 mb-4">Herramientas y Otros</h3>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h3 class="text-secondary border-bottom pb-2 mb-4 section-header">Herramientas y Otros</h3>
                 <div class="row g-4">
                     <!-- Control de Versiones -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fab fa-git-alt"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">Control de Versiones</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -207,16 +207,16 @@
                     </div>
     
                     <!-- Cloud -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fas fa-cloud"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">Cloud Computing</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -229,16 +229,16 @@
                     </div>
     
                     <!-- DevOps -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="card h-100 border-0 shadow-sm">
                             <div class="card-body">
-                                <div class="text-primary mb-3 fs-1 text-center">
+                                <div class="text-primary mb-3 fs-1 text-center floating">
                                     <i class="fas fa-tools"></i>
                                 </div>
                                 <h5 class="card-title text-center mb-3">DevOps</h5>
-                                <div class="mb-3">
+                                <div class="mb-3 progress-container">
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="--skill-value: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <ul class="list-unstyled">
@@ -253,7 +253,7 @@
             </div>
         </div>
     </section>
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 animate__animated animate__fadeInUp">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -261,13 +261,13 @@
                 </div>
                 <div class="col-md-6">
                     <div class="d-flex justify-content-md-end gap-3">
-                        <a href="https://github.com/Samux27" class="text-white">
+                        <a href="https://github.com/Samux27" class="text-white social-icon">
                             <i class="fab fa-github fs-4"></i>
                         </a>
-                        <a href="https://es.linkedin.com" class="text-white">
+                        <a href="https://es.linkedin.com" class="text-white social-icon">
                             <i class="fab fa-linkedin fs-4"></i>
                         </a>
-                        <a href="https://x.com/PuntaSamuel" class="text-white">
+                        <a href="https://x.com/PuntaSamuel" class="text-white social-icon">
                             <i class="fab fa-twitter fs-4"></i>
                         </a>
                     </div>
@@ -275,6 +275,55 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS animation library
+        AOS.init();
+        
+        // Animate progress bars when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation class after a short delay
+            setTimeout(function() {
+                const progressContainers = document.querySelectorAll('.progress-container');
+                progressContainers.forEach(container => {
+                    container.closest('.progress-container').classList.add('progress-animated');
+                });
+            }, 500);
+            
+            // Add scroll event listener for navbar transparency
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.style.background = 'rgba(33, 37, 41, 0.9)';
+                    navbar.style.backdropFilter = 'blur(10px)';
+                } else {
+                    navbar.style.background = '#212529';
+                    navbar.style.backdropFilter = 'none';
+                }
+            });
+            
+            // Apply hover effects to cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    const siblings = Array.from(this.parentNode.parentNode.querySelectorAll('.card')).filter(el => el !== this);
+                    siblings.forEach(sibling => {
+                        sibling.style.opacity = '0.7';
+                        sibling.style.transform = 'scale(0.95)';
+                    });
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    const siblings = Array.from(this.parentNode.parentNode.querySelectorAll('.card'));
+                    siblings.forEach(sibling => {
+                        sibling.style.opacity = '1';
+                        sibling.style.transform = 'translateY(0)';
+                    });
+                });
+            });
+        });
+    </script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </html>

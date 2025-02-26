@@ -1,25 +1,221 @@
+
+/* Custom animations and styles */
+.bg-light-custom {
+    background-color: #f8f9fa;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
 .project-card {
-    transition: transform 0.3s ease;
-    background-color: #ffffff;
+    transition: all 0.3s ease;
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
-.bg-light-custom {
-    background-color: #f8f9fa;
+.project-card img {
+    transition: transform 0.8s ease;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.card-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    transition: width 0.3s ease;
+}
+
+.project-card:hover .card-title::after {
+    width: 100px;
 }
 
 .project-tag {
-    background-color: #e9ecef;
-    color: #495057;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
+    display: inline-block;
+    background: #e9f5ff;
+    color: #3498db;
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.project-tag:hover {
+    background: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+
+.navbar {
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(to right, #1a2a6c, #2c3e50) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand img {
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: rotate(10deg);
+}
+
+.nav-link {
+    position: relative;
+    margin: 0 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+footer {
+    background: linear-gradient(to right, #1a2a6c, #2c3e50) !important;
+    padding: 2rem 0 !important;
+}
+
+footer a {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.page-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
     display: inline-block;
-    font-size: 0.875rem;
+}
+
+.page-title::before,
+.page-title::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: -10px;
+    border-radius: 10px;
+}
+
+.page-title::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    background-color: #3498db;
+}
+
+.page-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    bottom: -18px;
+    background-color: #2ecc71;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* Button effect */
+.view-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.view-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(52, 152, 219, 0.2);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.view-btn:hover::before {
+    width: 100%;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
